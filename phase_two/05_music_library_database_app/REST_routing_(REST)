@@ -1,0 +1,59 @@
+# REST routing (REST)
+
+Albums resoure
+
+
+1. List all albums
+```
+Request:
+GET /albums
+
+Response (200/OK):
+A list of albums
+
+```
+
+2. Find a specific column
+```
+Request:
+GET /albums/:id
+
+Response (200/OK):
+A specific album
+
+```
+
+3. Create a new album
+```
+Request:
+POST /albums
+
+With body parameters:
+title="OK Computer"
+release_year="1997"
+artist_id="5"
+
+Response (200/OK):
+No content, just create the new resource (the album)
+
+```
+
+
+
+# Read a single album
+Request: GET /albums/1
+Response: of a single album
+
+# Create a new album
+Request: POST /albums
+  With body parameters: "title=OK Computer"
+Response: None (just creates the resource on the server)
+
+# Update a single album
+Request: PATCH /albums/1
+  With body parameters: "title=OK Computer"
+Response: None (just updates the resource on the server)
+
+# Delete an album
+Request: DELETE /albums/1
+Response: None (just deletes the resource on the server)
